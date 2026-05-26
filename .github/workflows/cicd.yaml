@@ -2,7 +2,17 @@
 name: Ci/CD
 
 on:
-  workflow_dispatch: 
+  workflow_dispatch:
+    inputs:
+      environment:
+        description: This is the environment value where workflow runs
+        default: "dev"
+        required: true
+        type: choice
+        options:
+          - dev
+          - test
+          - prod
 
 jobs:
   code:
