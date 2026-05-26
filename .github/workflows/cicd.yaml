@@ -1,0 +1,29 @@
+# This is the name of the file
+name: Ci/CD
+
+on:
+  workflow_dispatch: 
+
+jobs:
+  code:
+    runs-on: ubuntu-latest
+    steps:
+      - name: checkout code
+        run: echo "code clone from github"
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: build the code
+        run: echo "build the code from docker"
+    
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: test the code
+        run: echo "testing the container"
+    
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the container
+        run: echo "docker container deploying the app"
