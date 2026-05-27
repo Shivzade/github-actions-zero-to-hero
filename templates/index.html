@@ -6,6 +6,7 @@
     <title>DevOps Zero To Hero</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
+
         body {
             min-height: 100vh;
             display: flex;
@@ -15,11 +16,13 @@
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
             color: #e0e0e0;
         }
+
         .container {
             text-align: center;
             padding: 2rem;
-            max-width: 640px;
+            max-width: 700px;
         }
+
         h1 {
             font-size: 2.5rem;
             margin-bottom: 0.5rem;
@@ -27,6 +30,7 @@
             -webkit-background-clip: text;
             -webkit-text-fill-color: transparent;
         }
+
         .badge {
             display: inline-block;
             margin: 1rem 0 2rem;
@@ -37,12 +41,14 @@
             color: #c4b5fd;
             letter-spacing: 0.05em;
         }
+
         .cards {
             display: flex;
             gap: 1rem;
             justify-content: center;
             flex-wrap: wrap;
         }
+
         .card {
             background: rgba(255, 255, 255, 0.06);
             border: 1px solid rgba(255, 255, 255, 0.1);
@@ -51,6 +57,7 @@
             min-width: 150px;
             flex: 1;
         }
+
         .card span {
             display: block;
             font-size: 0.75rem;
@@ -59,29 +66,55 @@
             color: #9ca3af;
             margin-bottom: 0.4rem;
         }
+
         .card strong {
-            font-size: 1.25rem;
+            font-size: 1.1rem;
             color: #f9fafb;
+        }
+
+        .footer {
+            margin-top: 2rem;
+            font-size: 0.9rem;
+            color: #9ca3af;
+        }
+
+        .footer span {
+            display: inline-block;
+            margin: 0.3rem;
+            padding: 0.4rem 0.8rem;
+            border-radius: 20px;
+            background: rgba(255,255,255,0.08);
         }
     </style>
 </head>
+
 <body>
     <div class="container">
         <h1>DevOps Zero To Hero</h1>
+
         <div class="badge">Josh Batch 10</div>
+
         <div class="cards">
             <div class="card">
                 <span>Framework</span>
                 <strong>Flask 3.1</strong>
             </div>
+
             <div class="card">
                 <span>Runtime</span>
                 <strong>Python 3.14</strong>
             </div>
+
             <div class="card">
                 <span>Deploy</span>
                 <strong>AWS ECS</strong>
             </div>
+        </div>
+
+        <div class="footer">
+            <span>✔ Build Passed</span>
+            <span>✔ Lint Checked</span>
+            <span>✔ GitHub Actions Deployed</span>
         </div>
     </div>
 </body>
