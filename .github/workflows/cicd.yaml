@@ -11,20 +11,17 @@ jobs:
     steps:
       - name: Chekcout Code
         run: echo "Code clone from GitHub"
-
-   build:
+  build:
     runs-on: ubuntu-latest
     steps:
       - name: Build Code
         run: echo "Docker container build"
-
-    test:
+  test:
     runs-on: ubuntu-latest
     steps:
       - name: Test the Container
         run: echo "Testing the container"
-
-    deploy:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Deploying the app
