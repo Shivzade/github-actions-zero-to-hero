@@ -2,4 +2,5 @@
 
 # GitHub Actions Zero to Hero
 
-# (Hello) [.github/workflows/hello.yml]
+- (Hello) [.github/workflows/hello.yml]
+- (CICD) [.github/workflows/cicd.yml]
