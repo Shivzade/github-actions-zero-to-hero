@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevOps Zero To Hero</title>
+    <title>GitHub Actions CI/CD Demo</title>
     <style>
         * { margin: 0; padding: 0; box-sizing: border-box; }
         body {
@@ -18,7 +18,7 @@
         .container {
             text-align: center;
             padding: 2rem;
-            max-width: 640px;
+            max-width: 700px;
         }
         h1 {
             font-size: 2.5rem;
@@ -63,25 +63,36 @@
             font-size: 1.25rem;
             color: #f9fafb;
         }
+        .pipeline {
+            margin-top: 2rem;
+            color: #9ca3af;
+            font-size: 0.95rem;
+        }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>DevOps Zero To Hero</h1>
-        <div class="badge">Josh Batch 10</div>
+
+        <div class="badge">GitHub Actions CI/CD Pipeline ✓</div>
+
         <div class="cards">
             <div class="card">
-                <span>Framework</span>
-                <strong>Flask 3.1</strong>
+                <span>Build</span>
+                <strong>Docker ✓</strong>
             </div>
             <div class="card">
-                <span>Runtime</span>
-                <strong>Python 3.14</strong>
+                <span>Test</span>
+                <strong>Lint ✓</strong>
             </div>
             <div class="card">
                 <span>Deploy</span>
-                <strong>AWS ECS</strong>
+                <strong>AWS ECS ✓</strong>
             </div>
+        </div>
+
+        <div class="pipeline">
+            Code → Build → Lint Check → Docker Image → Deploy 🚀
         </div>
     </div>
 </body>
