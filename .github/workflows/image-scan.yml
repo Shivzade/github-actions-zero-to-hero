@@ -9,6 +9,10 @@ jobs:
         runs-on: ubuntu-latest
 
         steps:
+
+            - name: Checkout Code
+              uses: actions/checkout@v4
+
             - name: Login to Docker HUB
               uses: docker/login-action@v3
               with:
@@ -22,3 +26,5 @@ jobs:
                 severity: 'CRITICAL'
                 #ignore-unfixed: true
                 exit-code: '1'
+                trivyignore: ${{ github.workspace }}/.trivyignore
+
